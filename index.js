@@ -92,7 +92,7 @@ const map = new maplibregl.Map({
           id: 'background',
           type: 'background',
           paint: {
-            'background-color': 'green'
+            'background-color': 'hsl(50, 80%, 70%)'
           }
         },
 
@@ -103,6 +103,7 @@ const map = new maplibregl.Map({
           source: 'raster-source',
         },
 
+        
         // Circle レイヤ
         {
           id: 'circle-layer',
@@ -242,7 +243,7 @@ const map = new maplibregl.Map({
     // hash: URLのハッシュ部分に地図の位置情報を反映させるかどうか
     hash: true,
 
-    maxZoom: 12,
+    maxZoom: 18,
     minZoom: 4,
 });
 
